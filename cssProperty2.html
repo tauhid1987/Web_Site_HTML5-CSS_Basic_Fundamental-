@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project0 Home Page</title>
+<link rel="stylesheet" href="style.css">
+<style> 
+.animation div{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+ }
+
+
+.color{
+  background-color: coral;
+}
+
+.newspaper {
+  column-count: 3;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.style div.a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.style div.b {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.style div.c {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.style div.d {
+  text-decoration-line: overline underline;
+  text-decoration-style: wavy;
+}
+
+
+.decoration p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
+}
+
+
+.wrap div {
+  width: 150px; 
+  border: 1px solid #000000;
+
+div.a {
+  word-wrap: normal;
+}
+
+div.b {
+  word-wrap: break-word;
+}
+
+}
+
+</style>
+</head>
+<body>
+ <div class="headersection template clear">
+ 
+  <div class="logo">
+	  <img src="images/logo.jpg" alt="logo"/>
+	  <h2>Welcome</h2>
+	  <p>Our Website Description</p>
+  </div>
+  <div class="social">
+	   <a href="https://www.facebook.com" target="_blank"><img src="images/social/facebook.png" alt="facebook"/></a>
+	   <a href="https://twitter.com/explore" target="_blank"><img src="images/social/twitter.png" alt="twitter"/></a>
+	   <a href="https://www.linkedin.com/" target="_blank"><img src="images/social/linkedin.png" alt="linkedin"/></a>
+	   <a href="https://plus.google.com/" target="_blank"><img src="images/social/google.png" alt="google"/></a>
+	   <a href="https://www.youtube.com/" target="_blank"><img src="images/social/youtube.png" alt="youtube"/></a>
+   </div>
+ 
+ </div>
+ 
+ 
+ <div class="navsection template clear">
+      <ul>
+	    <li><a href="index.html">Home</a></li>
+		<li><a href="listTableImage1.html">List Table</a></li>
+		<li><a id="active" href="cssProperty2.html">CSS Property</a></li>
+		<li><a href="cssSelector1.html">CSS Selector</a></li>
+		<li><a href="8_mediaqueries.html">Media Queries</a></li>
+		<li><a href="15_Alerts.html">Grid Component</a></li>
+		<li><a href="19_gridsystem.html">Grid Model</a></li>
+		<li><a href="sass.html">SCSS</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+ </div>
+ 
+	    
+            
+       
+ <div class="contentsection template clear">
+	<div class="maincontent clear">
+	    <div class="about">
+	  		 <h2>CSS Selector Page:</h2>
+		<div class="animation">
+	<h1>The animation Property</h1>
+
+	<p>Move an element from 0px to 200px left. The animation lasts for 5 seconds. It then starts over again, and go on forever (infinite).</p>
+	<div></div>
+
+	<p><strong>Note:</strong> The animation property is not supported in Internet Explorer 9 and earlier versions.</p>
+</div>
+
+<br><br><br><br><br>
+<div class="color">
+	<h1>The background-color Property</h1>
+
+	<p>The background color can be specified with a color name.</p>
+
+</div>
+
+<br><br><br><br><br>
+
+<div class="column">
+	<h1>The column-count Property</h1>
+	<p>The column-count property defines the number of columns an element is divided into:</p>
+
+	<div class="newspaper">
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+	</div>
+
+</div>
+
+<br><br><br><br><br>
+<div class="grid">
+<h1>The grid-row-gap Property</h1>
+
+<p>Use the <em>grid-row-gap</em> property to specify the size of the gap between the rows.</p>
+<p>This grid has a 50px gap between rows (and a 10px gap between columns):</p>
+
+	<div class="grid-container">
+	  <div class="item1">1</div>
+	  <div class="item2">2</div>
+	  <div class="item3">3</div>  
+	  <div class="item4">4</div>
+	  <div class="item5">5</div>
+	  <div class="item6">6</div>
+	  <div class="item7">7</div>
+	  <div class="item8">8</div>
+	  <div class="item9">9</div>  
+	  <div class="item10">10</div>
+	  <div class="item11">11</div>
+	  <div class="item12">12</div>
+	</div>
+
+</div>
+<br><br><br><br><br>
+<div class="style">
+	<h1>The text-decoration-style Property</h1>
+
+	<div class="a">This is some text with a solid underline.</div>
+	<br>
+
+	<div class="b">This is some text with a wavy underline.</div>
+	<br>
+
+	<div class="c">This is some text with a double underline.</div>
+	<br>
+
+	<div class="d">This is some text with a wavy over- and underline.</div>
+
+	<p><b>Note:</b> The text-decoration-line property is not supported in Edge/Internet Explorer.</p>
+</div>
+
+<br><br><br><br><br>
+<div class="decoration">
+	<h1>The text-decoration-color Property</h1>
+
+	<p>The color of the underline should now be red!</p>
+
+	<p><strong>Note:</strong> The text-decoration-color property is not supported in Edge/Internet Explorer.</p>
+</div>
+
+<br><br><br><br><br>
+<div class="wrap">
+	<h1>The word-wrap Property</h1>
+
+	<h2>word-wrap: normal (default):</h2>
+	<div class="a"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+
+	<h2>word-wrap: break-word:</h2>
+	<div class="b"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+
+  </div>
+					
+  </div>
+</div>	
+
+	
+  <div class="sidebar clear">
+   <div class="samesidebar clear">
+		<h2>Requirements:</h2>
+			<ol>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">1.Four Different HTML Page</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">2.Possible to get from any page to any other Page</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">3.List, table and image</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank" >4.stylesheet file,CSS properties,CSS selectors,#id selector and .class selector </a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html">5.@media query</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank">6.Bootstrap component</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">7.Bootstrap columns</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">8.SCSS variable,SCSS nesting and SCSS inheritance </a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank">9.README.md describing file</a></li>
+			            		
+            </ol>			
+		      
+	     </div> 
+		 <div class="samesidebar clear">
+	     	<h2>Achivements:</h2>
+			<ol>
+			  <li>Ten Different HTML Pages</a></li>
+			    <ol>
+				  <li><a href="index.html">1.Home</a></li>				 
+				<li><a href="listTableImage1.html">2.List Table</a></li>
+				<li><a href="cssProperty2.html">3.CSS Property</a></li>
+				<li><a href="cssSelector1.html">4.CSS Selector</a></li>
+				<li><a href="8_mediaqueries.html">5.Media Queries</a></li>
+				<li><a href="15_Alerts.html">6.Grid Component</a></li>
+				<li><a href="19_gridsystem.html">7.Grid Model</a></li>
+				<li><a href="sass.html">8.SCSS</a></li>
+				<li><a href="about.html">9.About</a></li>
+				<li><a href="contact.html">10.Contact</a></li>
+				</ol>	
+			           		
+            </ol>			
+		      
+	     </div>
+		  
+		  
+	  </div>
+  </div>
+
+<div class="footersection template clear">
+<div class="footermenu">
+    <ul>
+	    <li><a href="index.html">Home</a></li>
+		<li><a href="listTableImage1.html">List Table</a></li>
+		<li><a href="cssProperty2.html">CSS Property</a></li>
+		<li><a href="cssSelector1.html">CSS Selector</a></li>
+		<li><a href="8_mediaqueries.html">Media Queries</a></li>
+		<li><a href="15_Alerts.html">Grid Component</a></li>
+		<li><a href="19_gridsystem.html">Grid Model</a></li>
+		<li><a href="sass.html">SCSS</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+
+  </div>
+<p>&copy;2020 Md.Tauhidul Islam</p>
+
+</div>
+</body>
+</html>

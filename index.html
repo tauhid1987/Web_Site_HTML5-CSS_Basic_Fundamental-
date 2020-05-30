@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project0 Home Page</title>
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect:'random',
+		slices:10,
+		animSpeed:500,
+		pauseTime:2200,
+		startSlide:0, //Set starting Slide (0 index)
+		directionNav:false,
+		directionNavHide:false, //Only show on hover
+		controlNav:false, //1,2,3...
+		controlNavThumbs:false, //Use thumbnails for Control Nav
+		pauseOnHover:true, //Stop animation while hovering
+		manualAdvance:false, //Force manual transitions
+		captionOpacity:0.8, //Universal caption opacity
+		beforeChange: function(){},
+		afterChange: function(){},
+		slideshowEnd: function(){} //Triggers after all slides have been shown
+	});
+});
+</script>
+
+</head>
+<body>
+ <div class="headersection template clear">
+ 
+  <div class="logo">
+	  <img src="images/logo.jpg" alt="logo"/>
+	  <h2>Welcome</h2>
+	  <p>Our Website Description</p>
+  </div>
+   <div class="social">
+	   <a href="https://www.facebook.com" target="_blank"><img src="images/social/facebook.png" alt="facebook"/></a>
+	   <a href="https://twitter.com/explore" target="_blank"><img src="images/social/twitter.png" alt="twitter"/></a>
+	   <a href="https://www.linkedin.com/" target="_blank"><img src="images/social/linkedin.png" alt="linkedin"/></a>
+	   <a href="https://plus.google.com/" target="_blank"><img src="images/social/google.png" alt="google"/></a>
+	   <a href="https://www.youtube.com/" target="_blank"><img src="images/social/youtube.png" alt="youtube"/></a>
+   </div>
+ 
+ </div>
+ 
+ 
+ <div class="navsection template clear">
+      <ul>
+	    <li><a id="active" href="index.html">Home</a></li>
+		<li><a href="listTableImage1.html">List Table</a></li>
+		<li><a href="cssProperty2.html">CSS Property</a></li>
+		<li><a href="cssSelector1.html">CSS Selector</a></li>
+		<li><a href="8_mediaqueries.html">Media Queries</a></li>
+		<li><a href="15_Alerts.html">Grid Component</a></li>
+		<li><a href="19_gridsystem.html">Grid Model</a></li>
+		<li><a href="sass.html">SCSS</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+ </div>
+  <div class="slidersection template clear">
+     <div id="slider">
+	        <a href="#"><img src="images/slideshow/03.jpg" alt="nature 1" title="This is title one title or description" /></a>
+	        
+			<a href="#"><img src="images/slideshow/post1.jpg" alt="nature 2" title="This is title two title or description" /> </a>
+			
+			<a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" title="This is title three title or description" /></a>
+			
+			<a href="#"><img src="images/slideshow/post2.jpg" alt="nature 3" title="This is title four title or description" /></a>
+			
+			<a href="#"><img src="images/slideshow/01.jpg" alt="nature 4" title="This is title five title or description"/></a>
+			           
+            <a href="#"><img src="images/slideshow/02.jpg" alt="nature 6" title="This is title six title or description"/></a>
+			
+			<a href="#"><img src="images/slideshow/post4.jpg" alt="nature 7" title="This is title seven title or description"/></a> 
+			
+			<a href="#"><img src="images/slideshow/post5.jpg" alt="nature 8" title="This is title eight title or description"/></a> 
+            
+            
+        </div>
+  </div>
+ <div class="contentsection template clear">
+	<div class="maincontent clear">
+	 <div class="samepost clear">
+	  <h2>Language Movement:</h2>
+	  <a href="#"><img src="images/post6.jpg" alt="post image"/></a>	  
+	  <p>Language Movement began in 1948 and reached its climax in the killing of 21 February 1952, and ended in the adoption of Bangla as one of the state languages of Pakistan. The question as to what would be the state language of Pakistan was raised immediately after its creation. The central leaders and the Urdu-speaking intellectuals of Pakistan declared that urdu would be the state language of Pakistan, just as Hindi was the state language of India. The students and intellectuals of East Pakistan, however, demanded that Bangla be made one of the state languages. After a lot of controversy over the language issue, the final demand from East Pakistan was that Bangla must be the official language and the medium of instruction in East Pakistan and for the central government it would be one of the state languages along with Urdu. The first movement on this issue was mobilised by Tamaddun Majlish headed by Professor Abul Kashem. Gradually many other non-communal and progressive organisations joined the movement, which finally turned into a mass movement.Meanwhile, serious preparation was being taken in various forums of the central government of Pakistan under the initiative of Fazlur Rahman, the central education minister, to make Urdu the only state language of Pakistan. On receipt of this information, East Pakistani students became agitated and held a meeting on the Dhaka University campus on 6 December 1947, demanding that Bangla be made one of the state languages of Pakistan. The meeting was followed by student processions and more agitation. The first Rastrabhasa Sangram Parishad (Language Action Committee) was formed towards the end of December with Professor Nurul Huq Bhuiyan of Tamaddun Majlish as the convener.</p>	
+     <div class="readmore clear">
+	   <a href="readmore.html">Read More</a>
+	 </div>	  
+    </div>
+	
+		
+	
+   <div class="samepost clear">
+	  <h2>Details:</h2>
+	  <a href="#"><img src="images/post3.jpg" alt="post image"/></a>	  
+	  <p>The Constituent Assembly of Pakistan was in session at Karachi-then the capital of Pakistan-from 23 February 1948. It was proposed that the members would have to speak either in Urdu or in English at the Assembly. dhirendranath datta, a member from the East Pakistan Congress Party, moved an amendment motion to include Bangla as one of the languages of the Constituent Assembly. He noted that out of the 6 crore 90 lakh population of Pakistan, 4 crore 40 lakh were from East Pakistan with Bangla as their mother tongue. The central leaders, including liaquat ali khan, prime minister of Pakistan, and khwaja nazimuddin, chief minister of East Bengal, opposed the motion. On receiving the news that the motion had been rejected, students, intellectuals and politicians of East Pakistan became agitated. Newspapers such as the Azad also criticised of the politicians who had rejected the motion.
+
+	  A new committee to fight for Bangla as the state language was formed with Shamsul Huq as convener. On 11 March 1948 a general strike was observed in the towns of East Pakistan in protest against the omission of Bangla from the languages of the Constituent Assembly, the absence of Bangla letters in Pakistani coins and stamps, and the use of only Urdu in recruitment tests for the navy. The movement also reiterated the earlier demand that Bangla be declared one of the state languages of Pakistan and the official language of East Pakistan. Amidst processions, picketing and slogans, leaders such as Shawkat Ali, Kazi Golam Mahboob, Shamsul Huq, Oli Ahad, sheikh mujibur rahman, Abdul Wahed and others were arrested. Student leaders, including Abdul Matin and abdul malek ukil, also took part in the procession and picketing.
+
+	  A meeting was held on the Dhaka University premises. Mohammad Toaha was severely injured while trying to snatch away a rifle from a policeman and had to be admitted to hospital. Strikes were observed from 12 March to 15 March.
+	</p>	
+	  <div class="readmore clear">
+	    <a href="readmore.html">Read More</a>
+	  </div>	  
+   </div>
+</div>
+	
+	   <div class="sidebar clear">
+		 <div class="samesidebar clear">
+		<h2>Requirements:</h2>
+			<ol>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">1.Four Different HTML Page</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">2.Possible to get from any page to any other Page</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">3.List, table and image</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank" >4.stylesheet file,CSS properties,CSS selectors,#id selector and .class selector </a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html">5.@media query</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank">6.Bootstrap component</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">7.Bootstrap columns</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">8.SCSS variable,SCSS nesting and SCSS inheritance </a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank">9.README.md describing file</a></li>
+			            		
+            </ol>			
+		      
+	     </div> 
+		 <div class="samesidebar clear">
+	     	<h2>Achivements:</h2>
+			<ol>
+			  <li>Ten Different HTML Pages</a></li>
+			    <ol>
+				  <li><a href="index.html">1.Home</a></li>				 
+				<li><a href="listTableImage1.html">2.List Table</a></li>
+				<li><a href="cssProperty2.html">3.CSS Property</a></li>
+				<li><a href="cssSelector1.html">4.CSS Selector</a></li>
+				<li><a href="8_mediaqueries.html">5.Media Queries</a></li>
+				<li><a href="15_Alerts.html">6.Grid Component</a></li>
+				<li><a href="19_gridsystem.html">7.Grid Model</a></li>
+				<li><a href="sass.html">8.SCSS</a></li>
+				<li><a href="about.html">9.About</a></li>
+				<li><a href="contact.html">10.Contact</a></li>
+				</ol>	
+			           		
+            </ol>			
+		      
+	     </div>
+		  
+	  </div>
+  </div>
+
+<div class="footersection template clear">
+<div class="footermenu">
+     <ul>
+	    <li><a href="index.html">Home</a></li>
+		<li><a href="listTableImage1.html">List Table</a></li>
+		<li><a href="cssProperty2.html">CSS Property</a></li>
+		<li><a href="cssSelector1.html">CSS Selector</a></li>
+		<li><a href="8_mediaqueries.html">Media Queries</a></li>
+		<li><a href="15_Alerts.html">Grid Component</a></li>
+		<li><a href="19_gridsystem.html">Grid Model</a></li>
+		<li><a href="sass.html">SCSS</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+
+  </div>
+<p>&copy;2020 Md.Tauhidul Islam</p>
+
+</div>
+</body>
+</html>

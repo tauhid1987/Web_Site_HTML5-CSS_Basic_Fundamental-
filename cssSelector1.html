@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project0 Home Page</title>
+<link rel="stylesheet" href="style.css">
+ <style>
+  
+	.id p.hometown { 
+	   background: yellow;
+	  }
+	
+
+	.section .intro {
+	  background-color: green;
+	}
+	
+	
+	#id1 #firstname {
+	  background-color: yellow;
+	}
+	#id2 p::after { 
+	  content: " - Remember this";
+	}
+
+   .act a:active {
+       background-color:red;
+     }
+
+	#default input:default {
+	  box-shadow: 0 0 1px 1px red;}
+  
+    #child p:first-child {
+    background-color: orange; 
+     }
+	
+  .hov input:focus {
+  background-color: violet;
+     }
+	 
+  a:hover {
+	background-color: green;
+	}
+
+
+  .invalid input:valid {
+    background-color: orange;
+   }
+
+  #jump :target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+    }
+
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+
+
+
+input:-moz-read-only { /* For Firefox */
+  background-color: yellow;
+}
+
+input:read-only {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+ <div class="headersection template clear">
+ 
+  <div class="logo">
+	  <img src="images/logo.jpg" alt="logo"/>
+	  <h2>Welcome</h2>
+	  <p>Our Website Description</p>
+  </div>
+   <div class="social">
+	   <a href="https://www.facebook.com" target="_blank"><img src="images/social/facebook.png" alt="facebook"/></a>
+	   <a href="https://twitter.com/explore" target="_blank"><img src="images/social/twitter.png" alt="twitter"/></a>
+	   <a href="https://www.linkedin.com/" target="_blank"><img src="images/social/linkedin.png" alt="linkedin"/></a>
+	   <a href="https://plus.google.com/" target="_blank"><img src="images/social/google.png" alt="google"/></a>
+	   <a href="https://www.youtube.com/" target="_blank"><img src="images/social/youtube.png" alt="youtube"/></a>
+   </div>
+ 
+ </div>
+ 
+ 
+ <div class="navsection template clear">
+      <ul>
+	    <li><a href="index.html">Home</a></li>
+		<li><a href="listTableImage1.html">List Table</a></li>
+		<li><a href="cssProperty2.html">CSS Property</a></li>
+		<li><a id="active" href="cssSelector1.html">CSS Selector</a></li>
+		<li><a href="8_mediaqueries.html">Media Queries</a></li>
+		<li><a href="15_Alerts.html">Grid Component</a></li>
+		<li><a href="19_gridsystem.html">Grid Model</a></li>
+		<li><a href="sass.html">SCSS</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+ </div>
+ 
+	    
+            
+       
+ <div class="contentsection template clear">
+	<div class="maincontent clear">
+	  <div class="about">
+	    <h2>CSS Property Page:</h2>
+				
+				 <div class="id">
+		   <h1>Class Selector:</h1>
+			<p>My name is Donald.</p>
+			<p class="hometown">I live in Ducksburg.</p>
+
+			<p>My name is Dolly.</p>
+			<p class="hometown">I also live in Ducksburg.</p>
+		</div>
+
+		<div class="section">
+		  
+			<h1>Another Class Selector:</h1>
+
+			<div class="intro">
+			  <p>My name is Donald.</p>
+			  <p>I live in Duckburg.</p>
+			</div>
+
+			<p>My best friend is Mickey.</p>
+
+			<p class="intro">My best friend is Mickey.</p>
+		</div>
+
+
+		<div id="id1">
+			<h1>Id Selector:</h1>
+
+			<div class="intro">
+				<p id="firstname">My name is Donald.</p>
+				<p id="hometown">I live in Duckburg.</p>
+			</div>
+
+			   <p> My best friend is Mickey.</p>
+
+		</div>
+
+		<div id="id2">
+			 <h1>Id Selector:</h1>
+			<p>My name is Donald</p>
+			<p>I live in Ducksburg</p>
+
+			<p><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).</p>
+
+		</div>
+
+
+		<div class="act">
+		 <h1>Active Selector:</h1>
+		<a href="https://www.google.com" arget="_blank" >Google.com</a>
+		<a href="http://www.gmail.com" target="_blank">Facebook.com</a>
+
+		<p><b>Note:</b> The :active selector styles the active link.</p>
+		</div>
+
+		<div id="default">
+			   
+			<h1>The default Selector</h1>
+			<p>The :default selector selects the default form element in a group of related elements.</p>
+			<p>The "male" radio button is checked by default:</p>
+
+			<form action="">
+			  <input type="radio" name="gender" value="male" checked> Male<br>
+			  <input type="radio" name="gender" value="female"> Female<br>
+			  <input type="radio" name="gender" value="other"> Other
+			</form>
+
+			<p>The :default selector is not supported in Internet Explorer 11 and earlier versions.</p>
+
+		</div>
+
+
+		<div id="child">
+			<p>This paragraph is the first child of its parent (body).</p>
+
+			<h1>First Child Selector:</h1>
+			<p>This paragraph is not the first child of its parent.</p>
+
+			<div>
+			  <p>This paragraph is the first child of its parent (div).</p>
+			  <p>This paragraph is not the first child of its parent.</p>
+			</div>
+
+			<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+		</div>
+
+		<div class="hov">
+			 <h1>Focus Selector:</h1>
+			<p>Click inside the text fields to see a yellow background:</p>
+
+			<form>
+			  First name: <input type="text" name="firstname"><br>
+			  Last name: <input type="text" name="lastname">
+			</form>
+
+			<p><b>Note:</b> For :focus to work in IE8, a DOCTYPE must be declared.</p>
+
+		</div>
+
+
+		<div>
+		 <h1>Hover Selector:</h1>
+		 <a href="https://www.Google.com" target="_blank">Google</a>
+		 <a href="https://www.gmail.com" target="_blank">Gmail</a>
+
+		<p><b>Note:</b> The :hover selector style links on mouse-over.</p>
+		</div>
+
+
+		<div class="invalid">
+		<h3>A demonstration of the :valid selector.</h3>
+
+			<input type="email" value="support@example.com">
+
+			<p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+
+			<p><strong>Note</strong>: The :valid selector is not supported in Internet Explorer 9 and earlier versions.</p>
+
+		</div>
+
+		<div id="jump">
+
+		<h1>Target Selector</h1>
+
+		<p><a href="#news1">Jump to New content 1</a></p>
+		<p><a href="#news2">Jump to New content 2</a></p>
+
+		<p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+		<p id="news1"><b>New content 1...</b>
+		Tabs
+		Dropdowns
+		Accordions
+		Side Navigation
+		Top Navigation
+		Modal Boxes
+		Progress Bars
+		Parallax
+		Login Form
+		HTML Includes
+		Google Maps
+		Range Sliders
+		Tooltips
+		Slideshow
+		Filter List
+		Sort List</p>
+		<p id="news2"><b>New content 2...</b>
+		Tabs
+		Dropdowns
+		Accordions
+		Side Navigation
+		Top Navigation
+		Modal Boxes
+		Progress Bars
+		Parallax
+		Login Form
+		HTML Includes
+		Google Maps
+		Range Sliders
+		Tooltips
+		Slideshow
+		Filter List
+		Sort List</p>
+
+		<p><b>Note:</b> Internet Explorer 8 and earlier versions do not support the :target selector.</p>
+		</div>
+
+
+		<div>
+		<h1>Selection Seletor</h1>
+		<h1>Select some text on this page:</h1>
+
+		<p>This is a paragraph.</p>
+		<div>This is some text in a div element.</div>
+
+		<p><strong>Note:</strong> ::selection is not supported in Internet Explorer 8 and earlier versions.</p>
+
+		</div>
+		<div>
+		<h3>A demonstration of the :read-only selector.</h3>
+
+		<p>A normal input element:<br><input value="hello"></p>
+
+		<p>A readonly input element:<br><input readonly value="hello"></p>
+
+		<p>The :read-only selector selects form elements with a "readonly" attribute.</p>
+
+		<p><strong>Note:</strong> Firefox supports an alternative, the :-moz-read-only property.</p>
+
+		</div>
+
+				
+							
+		   </div>
+			
+			
+			 
+		</div>
+	
+	   <div class="sidebar clear">
+		<div class="samesidebar clear">
+		<h2>Requirements:</h2>
+			<ol>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">1.Four Different HTML Page</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">2.Possible to get from any page to any other Page</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">3.List, table and image</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank" >4.stylesheet file,CSS properties,CSS selectors,#id selector and .class selector </a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html">5.@media query</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank">6.Bootstrap component</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">7.Bootstrap columns</a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html" target="_blank">8.SCSS variable,SCSS nesting and SCSS inheritance </a></li>
+			  <li><a href="https://docs.cs50.net/web/2020/x/projects/0/project0.html"target="_blank">9.README.md describing file</a></li>
+			            		
+            </ol>			
+		      
+	     </div> 
+		 <div class="samesidebar clear">
+	     	<h2>Achivements:</h2>
+			<ol>
+			  <li>Ten Different HTML Pages</a></li>
+			    <ol>
+				  <li><a href="index.html">1.Home</a></li>				 
+				<li><a href="listTableImage1.html">2.List Table</a></li>
+				<li><a href="cssProperty2.html">3.CSS Property</a></li>
+				<li><a href="cssSelector1.html">4.CSS Selector</a></li>
+				<li><a href="8_mediaqueries.html">5.Media Queries</a></li>
+				<li><a href="15_Alerts.html">6.Grid Component</a></li>
+				<li><a href="19_gridsystem.html">7.Grid Model</a></li>
+				<li><a href="sass.html">8.SCSS</a></li>
+				<li><a href="about.html">9.About</a></li>
+				<li><a href="contact.html">10.Contact</a></li>
+				</ol>	
+			           		
+            </ol>			
+		      
+	     </div>
+		  
+		  
+	  </div>
+  </div>
+
+<div class="footersection template clear">
+<div class="footermenu">
+    <ul>
+	    <li><a href="index.html">Home</a></li>
+		<li><a href="listTableImage1.html">List Table</a></li>
+		<li><a href="cssProperty2.html">CSS Property</a></li>
+		<li><a href="cssSelector1.html">CSS Selector</a></li>
+		<li><a href="8_mediaqueries.html">Media Queries</a></li>
+		<li><a href="15_Alerts.html">Grid Component</a></li>
+		<li><a href="19_gridsystem.html">Grid Model</a></li>
+		<li><a href="sass.html">SCSS</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+
+  </div>
+<p>&copy;2020 Md.Tauhidul Islam</p>
+
+</div>
+</body>
+</html>

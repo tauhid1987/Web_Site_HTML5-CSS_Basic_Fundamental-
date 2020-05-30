@@ -1,0 +1,70 @@
+/*variabe & Nesting Example*/
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 25px;
+$myWidth: 500px;
+$fontAlign: center;
+
+
+
+.variable h1{  
+   font-family: $myFont;
+   font-size: $myFontSize;
+   color: $myColor; 
+   text-align: $fontAlign;
+}
+
+.contain h3{
+  font-family: $myFont;  
+  color: $myColor; 
+  text-align: $fontAlign;
+  text-decoration:justify;
+}
+
+.nesting #main-nav { 
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	text-align: $fontAlign;
+	color:green;
+     }
+  li {
+    display: inline-block;
+     }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    }
+	a:hover{
+	color:orange;
+	}
+}
+
+.nesting  h1{
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  text-align: $fontAlign; 
+}
+
+.inheritance h1{
+color:green; text-align:$fontAlign;}
+.panel{
+border:3px solid dodgerblue;
+background:#cca571;
+margin:10px;
+}
+.little-panel{
+@extend .panel;
+font-size:12px;
+padding:5px;
+}
+
+.big-panel{
+  @extend .panel;
+  font-size:32px;
+  padding:20px;
+}
+

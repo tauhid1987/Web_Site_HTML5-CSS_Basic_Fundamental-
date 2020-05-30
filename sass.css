@@ -1,0 +1,52 @@
+/*variabe & Nesting Example*/
+.variable h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  color: red;
+  text-align: center; }
+
+.contain h3 {
+  font-family: Helvetica, sans-serif;
+  color: red;
+  text-align: center;
+  text-decoration: justify; }
+
+.nesting #main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  color: green; }
+.nesting #main-nav li {
+  display: inline-block; }
+.nesting #main-nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+.nesting #main-nav a:hover {
+  color: orange; }
+
+.nesting h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  color: red;
+  text-align: center; }
+
+.inheritance h1 {
+  color: green;
+  text-align: center; }
+
+.panel, .little-panel, .big-panel {
+  border: 3px solid dodgerblue;
+  background: #cca571;
+  margin: 10px; }
+
+.little-panel {
+  font-size: 12px;
+  padding: 5px; }
+
+.big-panel {
+  font-size: 32px;
+  padding: 20px; }
+
+/*# sourceMappingURL=sass.css.map */
